@@ -1,0 +1,225 @@
+/* Default theme */
+:root {
+    /* colors */
+    --primary-color: #1C2777; /* blue */
+    --blue-theme-btn-color: #1C2777; /* blue */
+    --red-theme-btn-color: #F63858; /* blue */
+    --secondary-color: #fff;
+    --link-color: #035fe6;
+    --link-hover-color: #136ff6;
+    --background-color: white;
+    --light-color: #eee;
+    --dark-color: #ccc;
+    --text-color: black;
+    --half-light-color: #fcfcfc;
+    --nav-menu-color: #9C9C9C;
+    --productcard-text-color: #0B1035BF;
+    --iconcard-light-text-color: #6D6D6D;
+    --form-bacground-color: #F7F7F7;
+    --imagecard-text-color: #0B1035;
+    --imagecard-bg-color: #ECF3FB;
+    --imagebg-background-blue : rgb(28 39 119 / 60%);
+    --imagebg-background-grey : rgb(145 145 145 / 70%);
+    --articlecard-shadow: 0px 0px 3px #00000030;
+    --color-grey: #9098A3;
+  
+    /* fonts */
+    --body-font-family: 'Poppins', 'Helvetica Neue', arial, sans-serif;
+    --heading-font-family: var(--body-font-family);
+    --fixed-font-family: 'Poppins', 'Helvetica Neue', arial, sans-serif;
+    --feedback-font-family: inter, sans-serif;
+  
+    /* body sizes */
+    --body-font-size-l: 1.25rem;
+    --body-font-size-m: 1.125rem;
+    --body-line-height-m: 1.625rem;
+    --body-font-size-s: 1rem;
+    --body-line-height-s: 1.5rem;
+    --body-font-size-xs: .75rem;
+  
+    /* heading sizes and line height */
+    --heading-font-size-xxl: 48px;
+    --heading-line-height-xxl: 72px;
+    --heading-font-size-xl: 40px;
+    --heading-line-height-xl: 60rem;
+    --heading-font-size-l: 28px;
+    --heading-line-height-l: 42px;
+    --heading-font-size-m: 22px;
+    --heading-line-height-m: 33px;
+    --heading-font-size-s: 20px;
+    --heading-line-height-s: 24px;
+    --heading-font-size-xs: 18px;
+    --heading-line-height-xs: 18px;
+    --headingtext-font-size-s: 22px;
+    --aboutus-headingtext-font-size: 36px;
+    --carousel-heading-line-height: 36px;
+    --h2-line-height: 70px;
+    --button-font-size: 32px;
+    --p-line-height: 60px;
+    --p-font-size-l: 40px;
+    --p-font-size-m:20px;
+    --h3-font-size: 24px;
+    --h3-line-height : 36px;
+
+    /* Media breakpoints */
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+
+    /* nav height */
+    --nav-height: 64px;
+    --nav-menu-lineheight: 1.5rem;
+    
+
+    /* card icon height */
+    --productcard-icon-height: 60px;
+    --iconcard-icon-height: 94px;
+
+    /* aboutus icon height */
+    --aboutus-icon-height: 40px;
+    
+    /* carousel image width and height */
+    --carousel-image-height: 300px;
+    --carousel-image-width: 300px;
+    
+    /* hero banner width and height */
+    --herobanner-font-max-width: 430px;
+    --herobanner-image-height:600px;
+
+    /* svg image */
+    --icon-arrow-right: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.92633 12L13.6458 8.28553L14.0001 7.93174L13.6458 7.57795L9.92633 3.86345L9.2197 4.57103L12.0842 7.43172L2 7.43172L2 8.43172L12.0843 8.43172L9.2197 11.2924L9.92633 12Z' fill='black'/%3E%3C/svg%3E");
+
+    /* header footer common */
+    --header-footer-padding-left: 1rem;
+    --header-footer-padding-right: 1rem;
+    --header-footer-max-width: 1264px;
+
+    /* component wise gap */
+    --common-top-bottom-gap: 5rem;
+
+    /* form label sizes and line height */
+    --label-font-size-l: 22px;
+    --label-line-height-l: 33px;
+    --label-font-size-m: 18px;
+    --label-line-height-m: 24px;
+    --label-font-size-s: 16px;
+    --label-line-height-s: 20px;
+    
+    /* subscribe form related */
+    --subscribe-input-line-padding: 10px;
+    --subscribe-button-height: 50px;
+    --subscribe-button-width: 160px;
+    --placeholder-color: #6D6D6D;
+
+    /* Teaser cards home loan category */
+    --teaser-heading-font-size: 24px;
+    --teaser-heading-line-height: 36px;
+    --teaser-text-color: #6D6D6D;
+
+    /* About us related */
+    --aboutus-background-color: #F7F7F7;
+    --box-text-font-size-s: 15px;
+    --box-text-font-size-l: 35px;
+
+    /* video cards related */
+    --video-card-gap:1rem;
+    --video-playbtn-height:60px;
+    --video-playbtn-width:60px;
+    --video-playbtn-color: #000;
+
+    /* imagecard button height and width */
+    --imagecard-button-height: 48px;
+    --imagecard-button-width: 65%;
+
+     /* accordion related */
+     --accordion-background-color: #F7F7F7;
+     --accordion-text-color: #0B1035;
+     --accordion-border-color: #D4DBDE;
+     --accordion-text-font-size: 22px;
+     --accordion-btn-font-size: 16px;
+     --accordion-btn-line-height: 24px;
+     --accordion-btn-height: 48px;
+
+     /* Disclaimer text lineheight and color */
+     --disclaimer-text-line-height: 32px;
+     --disclaimer-text-color: #6D6D6D;
+     --disclaimer-heading-color: #0B1035;
+
+     /* Feedback related */
+     --feedback-btn-bg-color: #2C367D;  
+     --feedback-text-line-height: 20px;
+     --feedbackform-heading-font-size: 24px;
+     --feedbackform-heading-line-height: 32px;
+     --feedbackform-text-font-size: 18px;
+     --feedbackform-text-line-height: 20px;
+     --feedback-emoji-icon-width: 40px;
+     --feedback-emoji-icon-height: 40px;
+     --feedback-btn-container-width: 273px;
+     --feedback-btn-container-height: 64px;
+     --feedback-form-container-width: 370px;
+     
+
+  }
+
+  @media (width <= 350px) {
+    :root {
+      --feedback-btn-container-height: 42px;
+    }
+  }
+
+  @media (width >= 600px) {
+    :root {
+      /* header footer common */
+      --header-footer-padding-left: 2rem;
+      --header-footer-padding-right: 2rem;
+
+      /* subscribe form related */
+      --subscribe-input-line-padding: 10px;
+      --subscribe-button-height: 50px;
+      --subscribe-button-width: 160px;
+
+      /* video cards related */
+      --video-card-gap:2rem;
+    }
+  }
+
+  @media (width >= 992px) {
+    :root {
+      /* subscribe form related */
+      --subscribe-input-line-padding: 15px;
+      --subscribe-button-height: 50px;
+      --subscribe-button-width: 180px;
+
+      /* video cards related */
+      --video-card-gap:5rem;
+      
+    }
+  }
+
+  @media (width >= 1400px) {
+    :root {
+      /* subscribe form related */
+      --subscribe-input-line-padding: 20px;
+      --subscribe-button-height: 70px;
+      --subscribe-button-width: 200px;
+      
+      /* video cards related */
+      --video-playbtn-height:120px;
+      --video-playbtn-width:120px;
+    }
+  }
+
+/* Dark theme */
+html[data-theme="blue"] {
+  --primary-color: var(--blue-theme-btn-color); /* blue */
+  --secondary-color: #fff;
+}
+
+/* Custom theme */
+html[data-theme="red"] {
+  --primary-color: var(--red-theme-btn-color); /* red */
+  --secondary-color: #fff;
+}

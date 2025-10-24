@@ -1,0 +1,71 @@
+.cards.productcard > ul > li .cards-card-image img {
+    width: 59px;
+    height: var(--productcard-icon-height);
+    align-self: center;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.cards.productcard > ul {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.cards.productcard li {
+    /* height:180px; */
+    align-items: center;
+    box-shadow: 0 4px 10px 0 #00000030;
+    border: none;
+    justify-content: center;
+}
+
+.cards.productcard > ul > li .cards-card-image{
+    margin-top: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.cards.productcard > ul > li:first-child {
+    background: var(--primary-color);
+}
+
+.cards.productcard > ul > li .cards-card-body h3 {
+   font-size: var(--heading-font-size-s);
+   line-height: var(--heading-line-height-l);
+   color: var(--productcard-text-color);
+   margin-bottom: 34px;
+}
+
+.cards.productcard > ul > li .cards-card-body h3 > strong {
+    font-weight: 600;
+}
+
+.cards.productcard > ul > li:first-child .cards-card-body h3 {
+   color: var(--secondary-color);
+}
+
+.cards-container > .cards-wrapper:has(.productcard) {
+    padding: 0 67px;
+}
+
+.section.cards-container:has(.productcard) {
+    padding: 0 2rem;
+}
+
+.cards.productcard > ul > li:first-child .cards-card-image img {
+    opacity: 0;   
+}
+
+.cards.productcard > ul > li:first-child .cards-card-image {
+   background: var(--secondary-color);
+   mask-image: url("/icons/homeloan.svg");
+   mask-repeat: no-repeat;
+   mask-position: bottom;
+}
+
+.cards.productcard li .cards-card-body {
+    flex-grow: 0;
+}
+
+.cards.productcard > ul > li .cards-card-body a {
+    color: var(--secondary-color);
+}

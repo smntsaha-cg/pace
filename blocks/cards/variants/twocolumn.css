@@ -1,0 +1,9 @@
+.cards.twocol > ul {
+  grid-template-columns: 1fr;
+}
+
+@media (width >= 768px) {
+  .cards.twocol > ul {
+    grid-template-columns: repeat(2, 1fr);;
+  }
+}

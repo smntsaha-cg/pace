@@ -1,0 +1,181 @@
+@import url("headingtext.css");
+
+.bankleft h2 {
+    font-size: var(--heading-font-size-xxl);
+    font-weight: 700;
+    line-height: var(--heading-line-height-xxl);
+    text-align: left;
+    margin: 1rem;
+    max-width: var(--herobanner-font-max-width);
+    width: 100%;
+}
+
+.bankleft h2 strong {
+    color: var(--primary-color);
+}
+
+.bankleft p{
+    color: var(--primary-color);
+    font-size: var(--headingtext-font-size-s);
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.bankleft p.button-container{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.bankleft .hero > div >div:last-child > p > picture {
+    mask-image: url("/icons/strokes.svg");
+    background: var(--primary-color);
+    margin-right: 8px;
+    mask-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+}
+
+.bankleft p.button-container a{
+    display: inline-block;
+    background-color: var(--primary-color);
+    font-size: var(--body-font-size-s);
+    line-height: var(--heading-line-height-s);
+    font-weight: 600;
+}
+
+.bankleft .hero >div >div{
+    margin: 60px 0;
+}
+
+.bankleft .hero > div >div:first-child > p > picture img {
+    object-position: 0 10px;
+}
+
+/* second banner */
+
+.banksecleft h2 {
+    font-size: var(--heading-font-size-xxl);
+    font-weight: 700;
+    line-height: var(--heading-line-height-xxl);
+    text-align: left;
+    margin: 1rem;
+    max-width: var(--herobanner-font-max-width);
+    width: 100%;
+}
+
+.banksecleft h2 strong {
+    color: var(--primary-color);
+}
+
+.banksecleft p{
+    color: var(--primary-color);
+    font-size: var(--headingtext-font-size-s);
+    font-weight: 600;
+    margin: 0 20px;
+}
+    
+
+.banksecleft p.button-container{
+    display: inline-block;
+    margin: 0 8px;
+}
+    
+
+.banksecleft .hero > div >div:last-child > p > picture {
+    mask-image: url("/icons/strokes.svg");
+    background: var(--primary-color);
+    margin-right: 8px;
+    mask-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+}
+    
+.banksecleft .hero > div >div:first-child > p > picture img {
+    object-position: 0 10px;
+    transform: scaleX(-1);
+    filter: contrast(0.65);
+}
+    
+
+.banksecleft p.button-container a{
+    display: inline-block;
+    background-color: var(--primary-color);
+    font-size: var(--body-font-size-s);
+    line-height: var(--heading-line-height-s);
+    font-weight: 600;
+}
+
+.banksecleft .hero >div >div{
+    margin: 60px 0;
+}
+
+/* jdx third banner */
+
+.bankthirdleft h2 {
+    font-size: var(--heading-font-size-xxl);
+    font-weight: 700;
+    line-height: var(--heading-line-height-xxl);
+    text-align: left;
+    margin: 1rem;
+    max-width: var(--herobanner-font-max-width);
+    width: 100%;
+}
+
+.bankthirdleft h2 strong {
+    color: var(--primary-color);
+}
+
+.bankthirdleft p{
+    color: var(--primary-color);
+    font-size: var(--headingtext-font-size-s);
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.bankthirdleft p.button-container{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.bankthirdleft .hero > div >div:last-child > p > picture {
+    mask-image: url("/icons/strokes.svg");
+    background: var(--primary-color);
+    margin-right: 8px;
+    mask-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+}
+
+.bankthirdleft p.button-container a{
+    display: inline-block;
+    background-color: var(--primary-color);
+    font-size: var(--body-font-size-s);
+    line-height: var(--heading-line-height-s);
+    font-weight: 600;
+}
+
+.bankthirdleft .hero >div >div{
+    margin: 60px 0;
+}
+
+.bankthirdleft .hero > div >div:first-child > p > picture img {
+    object-position: 0 10px;
+}
+
+@media (width > 1440px){
+    .bankthirdleft .hero > div >div:first-child > p > picture img,
+    .bankleft .hero > div >div:first-child > p > picture img{
+    object-position: 0 -284px;
+}
+}
+
+@media (width > 768px){
+    .bankthirdleft .hero,
+    .banksecleft .hero,
+    .bankleft .hero{
+        height: var(--herobanner-image-height);
+    }
+}

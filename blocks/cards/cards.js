@@ -1,4 +1,32 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
+import { openModal } from '../modal/modal.js';
+import vdecorate from '../video/video.js';
+
+async function openVideoModal(_videoUrl) {
+  const parentModalLink = '/pace/modals/videomodal';
+  await openModal(parentModalLink);
+  // setTimeout(async () => {
+  const block = document.querySelector('.modal-content .video.block');
+  const link = document.createElement('a');
+
+  // Set the href attribute
+  link.href = _videoUrl;
+  block.append(link);
+  await vdecorate(block);
+  // });
+}
+
+function bindVideoEvent(block) {
+  const videoCardBtn = block.querySelector('.videocards .cards-card-body .button-container a');
+  if (!videoCardBtn) return;
+  block.querySelectorAll('.videocards .cards-card-body .button-container a').forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const videoUrl = e.target.getAttribute('href');
+      openVideoModal(videoUrl);
+    });
+  });
+}
 
 export default function decorate(block) {
   /* change to ul, li */
@@ -12,6 +40,8 @@ export default function decorate(block) {
     });
     ul.append(li);
   });
-  ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
-  block.replaceChildren(ul);
+  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  block.textContent = '';
+  block.append(ul);
+  bindVideoEvent(block);
 }

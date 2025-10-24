@@ -1,0 +1,75 @@
+@media (width >= 992px){
+.columns-prehome >div >div >div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+}
+
+.columns-prehome >div >div >div >div:first-child{
+    grid-row: 1 / 2;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.columns-prehome >div >div >div >div:last-child{
+    grid-row: 1 / 4;
+    align-content: center;
+}
+}
+
+
+.columns-prehome >div   >div >div >div:first-child h2{
+    font-size: var(--aboutus-headingtext-font-size);
+    line-height: var(--carousel-heading-line-height);
+    max-width: 530px;
+    max-height: 108px;
+    width: auto;
+    height: auto;
+    color: var(--imagecard-text-color);
+}
+
+.columns-prehome > div > div >div >div p{
+    font-size: var(--label-font-size-s);
+    line-height: var(--label-line-height-m);
+    margin-bottom: 64px;
+    color: #6D6D6D;
+}
+
+.columns-prehome >div >div >div >div:nth-child(2){
+    padding-right: 40px;
+}
+
+.columns-prehome >div >div >div >div:nth-child(2) h4 {
+    font-size: var(--h3-font-size);
+    line-height: var(--carousel-heading-line-height);
+    margin-left: 26px;
+}
+
+.columns-prehome > div > div >div >div h4 .icon {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    top: 10px;
+}
+
+.columns-prehome >div >div >div >div:nth-child(2) p {
+    margin-left: 75px;
+}
+
+.columns-prehome > div > div >div >div h4 .icon img {
+    margin-left: -24px;
+}
+
+@media (width <= 992px){
+    .columns-prehome >div >div >div {
+        display: grid;
+        justify-items: center;
+    }
+
+    .columns-prehome >div >div >div >div:last-child {
+        grid-row: 1 / 4;
+        align-content: center;
+    }
+    
+  }

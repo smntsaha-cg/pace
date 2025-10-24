@@ -1,0 +1,39 @@
+.headingtext h2 {
+    font-size: var(--heading-font-size-xxl);
+    font-weight: 700;
+    line-height: var(--heading-line-height-xxl);
+    text-align: center;
+    margin: 1rem;
+}
+
+.headingtext p {
+    font-size: var(--body-font-size-s);
+    line-height: var(--heading-line-height-s);
+    text-align: center; 
+    color: var(--iconcard-light-text-color);
+}
+
+.headingtext p:first-child{
+    color: var(--primary-color);
+    font-size: var(--headingtext-font-size-s);
+    font-weight: 600;
+    line-height: var(--heading-line-height-xl);
+    margin-bottom: 0;   
+}
+
+.headingtext p:first-child img { 
+    opacity: 0;
+}
+
+.headingtext p:first-child picture {
+    mask-image: url("/icons/strokes.svg");   
+    background: var(--primary-color);
+    margin-right: 8px;
+    mask-repeat: no-repeat;
+    position: relative;
+    bottom: -7px;      
+}
+ 
+.headingtext h2 strong {
+    color: var(--primary-color);
+}

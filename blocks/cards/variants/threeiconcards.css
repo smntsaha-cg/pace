@@ -1,0 +1,66 @@
+  .cards.iconcard > ul { 
+    gap: 46px; 
+  }
+
+  .cards.iconcard > ul > li {
+    border-radius: 6px;
+    flex-direction: column;
+    background-color: var(--half-light-color);
+    border: 0;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 24px 1px #00000029;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards.iconcard > ul > li .cards-card-body h3 {
+    font-size: var(--heading-font-size-s);
+    font-weight: 700;
+    line-height: var(--heading-line-height-s);
+    color: var(--productcard-text-color);
+    margin-bottom: 30px;
+  }
+  
+  .cards.iconcard > ul > li .cards-card-body h3 > strong {
+    font-weight: 700;
+  }
+
+  .cards.iconcard > ul > li .cards-card-body p {
+    line-height: var(--heading-line-height-xs);
+    text-align: center;
+    color: var(--iconcard-light-text-color);
+  }
+
+  .cards.iconcard > ul > li .cards-card-image {
+    background: var(--primary-color);
+    mask-repeat: no-repeat;
+    margin-top: 34px;
+  }
+
+  .cards.iconcard > ul > li .cards-card-image img {
+    max-width: 60px;
+    height: var(--iconcard-icon-height);
+    align-self: center;
+    opacity: 0;
+  }
+
+  .cards.iconcard > ul > li:first-child .cards-card-image img {
+    max-width: 84px;
+  }
+
+  .cards.iconcard > ul > li:first-child{
+    background: var(--half-light-color);
+  }
+
+  .cards.iconcard > ul > li:first-child .cards-card-image {
+    mask-image: url("/icons/PriorityBanking.svg");
+  }
+
+ .cards.iconcard > ul > li:nth-child(2) .cards-card-image {
+   mask-image: url("/icons/privateBanking.svg");
+  }
+
+.cards.iconcard > ul > li:last-child .cards-card-image {
+   mask-image: url("/icons/investmentService.svg");
+ }

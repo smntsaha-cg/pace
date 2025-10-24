@@ -1,27 +1,16 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
-}
+@import url("cards_common.css");
+@import url("./variants/fourcolumn.css");
+@import url("./variants/threecolumn.css"); 
+@import url("./variants/twocolumn.css"); 
+@import url("./variants/productcard.css");
+@import url("./variants/threeiconcards.css");
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
+/* @import url("./headingtext.css"); */
+@import url("./variants/imagecard.css");
+@import url("./variants/headingtext.css");
+@import url("./variants/overlappingcards.css");
+@import url("./variants/teasershomeloan.css");
+@import url("./variants/videocards.css");
 
-.cards .cards-card-body {
-  margin: 16px;
-}
-
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
+/* @import url("overlapproductcard.css"); */
+@import url("./variants/articlecard.css");

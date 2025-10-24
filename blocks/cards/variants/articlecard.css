@@ -1,0 +1,86 @@
+.section.cards-container:has(.article-card) {
+  padding-left: var(--video-card-gap);
+  padding-right: var(--video-card-gap);
+  padding-top: var(--video-card-gap);
+  background-color: var(--aboutus-background-color);
+}
+
+.section.cards-container:has(.article-card) > div {
+  max-width: 100%;
+  text-align: center;
+}
+
+.article-card.cards > ul > li .cards-card-body h3 {
+  font-size: var(--heading-font-size-l);
+  line-height: var(--heading-line-height-l);
+} 
+
+ .section.cards-container:has(.article-card) .default-content-wrapper h3 {
+  margin-bottom: var(--video-card-gap);
+  margin-top: 0;
+}
+
+.section.cards-container:has(.article-card) .default-content-wrapper {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+@media (width >= 900px) {
+  .section.cards-container:has(.article-card) .default-content-wrapper h3 {
+      font-size: var(--heading-font-size-xxl);
+      line-height: var(--heading-line-height-xxl);
+      font-weight: 700;
+  }
+}
+
+/*
+.section.cards-container:has(.article-card) .default-content-wrapper h3 {
+  margin-bottom: var(--video-card-gap);
+  margin-top: 0;
+} */
+
+.cards.article-card {
+  display: flex;
+  justify-content: center;
+}
+
+.cards.article-card > ul {
+  gap: 46px;
+}
+
+.cards.article-card > ul > li {
+  border-radius: 0;
+  flex-direction: column;
+  background-color: var(--half-light-color);
+  text-align: center;
+  box-shadow: var(--articlecard-shadow);
+  align-items: center;
+  justify-content: center;
+}
+
+.cards.article-card > ul > li .cards-card-body{
+  padding: 1rem;
+}
+
+.cards.article-card > ul > li .cards-card-body img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+}
+
+.cards.threecol > ul > li .cards-card-body h3 > strong {
+  font-weight: 700;
+}
+
+.cards.article-card > ul > li  .cards-card-body .button-container a {
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: center;
+  width: var(--imagecard-button-width);
+  height:var(--imagecard-button-height);
+  }

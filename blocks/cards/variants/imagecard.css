@@ -1,0 +1,96 @@
+.cards.imagecard > ul {
+    grid-template-columns: repeat(auto-fit, minmax(278px, 1fr));
+    gap: 38px;
+  }
+
+.cards.imagecard > ul > li {
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    flex-direction: column;
+    border: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+  
+  .cards.imagecard > ul > li .cards-card-body{
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .cards.imagecard > ul > li img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+  }
+
+  .cards.imagecard > ul > li .cards-card-body h3 {
+    font-size: var(--box-text-font-size-s);
+    font-weight: 400;
+    line-height: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .cards.imagecard > ul > li .cards-card-body h3 > strong {
+    font-weight: 600;
+    font-size: var(--h3-font-size);
+    color: var(--imagecard-text-color);
+    position: relative;
+    text-align: center;
+  }
+
+  .cards.imagecard > ul > li:nth-child(2) .cards-card-body h3 > strong {
+    color: var(--secondary-color);
+  }
+
+  .cards.imagecard > ul > li:first-child {
+    background-color: var(--imagecard-bg-color);
+    color: var(--imagecard-text-color);
+  }
+
+  .cards.imagecard > ul > li:nth-child(2) {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  .cards.imagecard > ul > li:last-child {
+    background-color: var(--imagecard-bg-color);
+    color: var(--imagecard-text-color);
+  }
+
+  .cards.imagecard > ul > li .cards-card-body .button-container a {
+    border-radius: 7px;
+    font-weight: 600;
+    justify-content: center;
+    width: var(--imagecard-button-width);
+    height:var(--imagecard-button-height);
+    display: inline-flex;
+    align-items: center;
+  }
+   
+  .cards.imagecard > ul > li:first-child .cards-card-body .button-container a  {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .cards.imagecard > ul > li:nth-child(2)  .cards-card-body .button-container a {
+    background-color: var(--secondary-color);
+    color: var(--imagecard-text-color);
+  }
+
+  .cards.imagecard > ul > li:last-child  .cards-card-body .button-container a {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  .cards.imagecard > ul > li .cards-card-body .button-container a::after {
+    content: none;
+}
+
+  .cards.imagecard > ul > li .cards-card-body .button-container  a.button:where(:hover, :focus) {
+    text-decoration: none;
+    text-align: center;
+  } 

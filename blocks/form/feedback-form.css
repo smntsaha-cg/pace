@@ -1,0 +1,151 @@
+@media (width <= 600px) {    
+    .form.feedback-form .field-wrapper.selection-wrapper  label#form-feedback1-label  {
+        margin-left: 15px;
+    }   
+}
+
+.section.feedbackbutton {
+    display: flex;
+    position: fixed;
+    right: 0;
+    padding-right: 0;
+}
+
+.section.feedbackbutton .button-container {
+    position: relative;
+    width: var(--feedback-btn-container-width);
+    height: var(--feedback-btn-container-height);
+}
+
+.section.feedbackbutton > div, .section.feedbackbutton > div .button-container {
+    margin: 0;
+}
+
+.section.feedbackbutton .button-container a.button{
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    background: var(--feedback-btn-bg-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: var(--feedback-font-family);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--feedback-text-line-height); /* 83.333% */
+    letter-spacing: 1px;
+    position: absolute;
+    transform: rotate(-90deg);
+    right: calc(50% - var(--feedback-btn-container-width) + var(--feedback-btn-container-height) /2);
+    top: calc(50% + var(--feedback-btn-container-width) /2 - var(--feedback-btn-container-height));
+    justify-content: center;
+}
+
+.form.feedback-form {
+    top: 0; 
+    right: 0;
+    width: 0;
+}
+
+.form.feedback-form.open {
+    width: 100%;
+}
+
+.form.feedback .icon.icon-feedbackicon .form.feedback-form.open {
+    background-image: url('/icons/feedbackclose.svg');
+}
+
+.form-wrapper:has(.feedback-form) {
+    margin-left: 0;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: var(--feedback-form-container-width);
+    background: var(--form-bacground-color);
+    max-height: var(--feedback-btn-container-width);
+    padding-bottom: 58px;
+}
+
+.form.feedback-form div.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form.feedback-form div.field-wrapper.heading-wrapper, .form.feedback-form .field-wrapper.plaintext-wrapper {
+    width: 100%;
+    padding-top: 0;
+}
+
+.form.feedback-form .field-wrapper.plaintext-wrapper p {
+    color: var(--color-grey);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--feedback-font-family);
+    font-size: var(--feedbackform-text-font-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--feedbackform-text-line-height); 
+    letter-spacing: -0.3px;
+    margin-top: 0;
+    margin-right: 80px;
+}
+
+.form.feedback-form .field-wrapper.heading-wrapper {
+    margin-left: 35px;
+    margin-right: 109px;
+    margin-top: 34px;
+    padding: 0;
+}
+
+.form.feedback-form .field-wrapper.heading-wrapper h2 {
+    text-align: center;
+    font-family: var(--feedback-font-family);
+    font-size: var(--feedbackform-heading-font-size);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--feedbackform-heading-line-height);    
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper {
+    grid-auto-flow: row;
+    padding: 0 8px 0 0; 
+}
+
+.field-wrapper.selection-wrapper  label#form-feedback1-label{
+    margin-left: 35px;
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper .icon {
+    width: var(--feedback-emoji-icon-width);
+    height: var(--feedback-emoji-icon-height);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid #EFF0F6;
+    transition: filter 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper label .icon img {
+    object-fit: cover; 
+    transition: transform 0.3s ease;   
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper label .icon:hover img {
+    filter: drop-shadow(0 0 4px #69696933);
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper label .icon.clicked  {
+    border-color: var(--feedback-btn-bg-color);
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper input {
+    display: none;
+}
+
+.form.feedback-form .field-wrapper.selection-wrapper label .icon.clicked  img {
+    transform: scale(1.12);
+}

@@ -1,0 +1,97 @@
+.section.cards-container:has(.videocards) {
+    padding-left: var(--video-card-gap);
+    padding-right: var(--video-card-gap);
+    background-color: var(--blue-theme-btn-color);
+    padding-top: var(--video-card-gap);
+}   
+
+.section.fragment-container:has(.videocards) {
+    margin: 0;
+    padding: 0;
+}
+
+.section.cards-container:has(.videocards) > div {
+    max-width: 100%;
+    text-align: center;
+}
+
+.section.cards-container:has(.videocards) .default-content-wrapper {
+    color: var(--secondary-color);
+}
+
+.videocards.cards > ul > li .cards-card-body h3 {
+    font-size: var(--heading-font-size-l);
+    line-height: var(--heading-line-height-l);
+}
+
+.section.cards-container:has(.videocards) .default-content-wrapper h3 {
+    margin-bottom: var(--video-card-gap);
+    margin-top: 0;
+}
+
+@media (width >= 900px) {
+    .section.cards-container:has(.videocards) .default-content-wrapper h3 {
+        font-size: var(--heading-font-size-xxl);
+        line-height: var(--heading-line-height-xxl);
+        font-weight: 700;
+    }
+}
+
+.videocards.cards > ul {
+    gap: var(--video-card-gap);
+}
+
+.videocards.cards > ul > li {
+    display: flex;
+    flex-direction: column;
+}
+
+.videocards.cards > ul > li img {
+    aspect-ratio: 16/9;
+}
+
+.videocards.cards > ul > li .cards-card-body {
+    font-size: var(--heading-font-size-m);
+    line-height: var(--heading-line-height-m);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.videocards.cards > ul > li > .cards-card-body > p:not(.button-container) {
+    margin: 0;
+}
+
+.videocards.cards > ul > li > .cards-card-body > p.button-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 0;
+}
+
+.videocards.cards > ul > li > .cards-card-body > p.button-container a {
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    font-size: var(--body-font-size-s);
+    line-height: var(--body-line-height-s);
+    font-weight: 600;
+}
+
+.videocards.cards > ul > li .cards-card-image {
+    position: relative;
+}
+
+.videocards.cards > ul > li .cards-card-image::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--video-playbtn-width);
+    height: var(--video-playbtn-height);
+    mask-image: url("/icons/playbtn.svg");
+    background: var(--video-playbtn-color);
+    mask-size: contain;
+    transform: translate(-50%, -50%);
+    mask-repeat: no-repeat;
+}
