@@ -163,4 +163,24 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // add event listener to change theme
+  const themeLinks = document.querySelectorAll('.nav-themeselector a');
+  const htmlTag = document.documentElement;
+  themeLinks.forEach((theme) => {
+    theme.addEventListener('click', (event) => {
+      const element = event.target;
+      event.preventDefault(); // Prevent the default link behavior
+      // alert('Link was clicked: ' + theme.textContent + element.matches('a:first-of-type'));
+      if (element.matches('a:first-of-type')) {
+        // Add or modify the 'data-theme' attribute
+        htmlTag.setAttribute('data-theme', 'blue');
+        // Verify the change
+        // console.log(htmlTag.getAttribute('data-theme')); // Should log 'value'
+      } else {
+        // Modify the 'data-theme' attribute again
+        htmlTag.setAttribute('data-theme', 'red');
+      }
+    });
+  });
 }
